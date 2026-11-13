@@ -1,0 +1,10 @@
+{
+  "name": "Internal assistant API",
+  "connector": "http_json",
+  "endpoint": "https://app.example/api/chat",
+  "headers": { "Authorization": "Bearer REPLACE_ME" },
+  "request_template": { "message": "{{prompt}}", "session_id": "mindbreaker" },
+  "response_path": "data.reply",
+  "system_prompt": "Paste the application's system prompt here if you know it; it is only used to recognise leaks.",
+  "authorized": true
+}
